@@ -1,20 +1,21 @@
 /*
-Задача №3064. Длина последовательности
+Задача №3065. Сумма последовательности
  */
 package com.company;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         System.out.println("Enter numbers:");
         Scanner scanner = new Scanner(System.in);
         int enteredNumber, summ = 0;
         while (scanner.hasNextInt()){
-            if (scanner.nextInt()==0){
+            enteredNumber=scanner.nextInt();
+            if (enteredNumber==0){
                 break;
             }
-            summ = summ + 1;
+            summ = summ + enteredNumber;
         }
         System.out.println(summ);
     }
